@@ -1,0 +1,34 @@
+{
+  "name": "fuatogur/laravel-jwt",
+  "description": "Simple JWT Authentication for Laravel",
+  "keywords": [
+    "jwt",
+    "laravel"
+  ],
+  "homepage": "https://github.com/fuatogur/laravel-jwt",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Fuat Oğur",
+      "homepage": "https://github.com/fuatogur"
+    }
+  ],
+  "require": {
+    "php": "^8.1",
+    "illuminate/auth": "^10",
+    "firebase/php-jwt": "^6.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "Fuatogur\\LaravelJWT\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Fuatogur\\LaravelJWT\\JWTServiceProvider"
+      ]
+    }
+  }
+}
